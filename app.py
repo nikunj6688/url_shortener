@@ -8,7 +8,7 @@ app = Flask(__name__)
 url_store = {}
 
 
-def generate_short_code(length=4):
+def generate_short_code(length=6):
     characters = string.ascii_letters + string.digits
     code = ""
 
