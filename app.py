@@ -26,7 +26,7 @@ def home():
 
         url_store[short_code] = long_url
 
-        short_url = f"http://127.0.0.1:5000/{short_code}"
+        short_url = request.host_url+short_code
 
         return render_template("index.html", short_url=short_url)
 
