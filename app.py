@@ -1,8 +1,8 @@
-rom flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect
 import string
 import random
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 url_mapping = {}
 
@@ -30,5 +30,5 @@ def redirect_url(code):
         return redirect(long_url)
     return "URL not found"
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)

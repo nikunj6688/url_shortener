@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>URL Shortener</title>
+    <title>URL Shortener | Nikunj Raj Taneja</title>
 
     <style>
         body {
             margin: 0;
             height: 100vh;
             display: flex;
-            justify-content: center;   /* Horizontal center */
-            align-items: center;       /* Vertical center */
+            justify-content: center;
+            align-items: center;
             background-color: #f2f2f2;
             font-family: Arial, sans-serif;
         }
@@ -25,6 +25,12 @@
         }
 
         h1 {
+            margin-bottom: 10px;
+        }
+
+        .author {
+            color: gray;
+            font-size: 14px;
             margin-bottom: 20px;
         }
 
@@ -60,6 +66,7 @@
 <body>
     <div class="container">
         <h1>URL Shortener</h1>
+        <p class="author">By Nikunj Raj Taneja</p>
 
         <form method="POST">
             <input type="text" name="url" placeholder="Enter long URL" required>
@@ -67,7 +74,6 @@
             <button type="submit">Shorten</button>
         </form>
 
-        <!-- Flask will show short URL here -->
         {% if short_url %}
             <div class="result">
                 Short URL:
